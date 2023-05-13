@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+        --mainn-color: #A300A7;
+        --main-color: #d21fff;
+        --second-color: #000000;
+        --third-color: #FFFFFF;
+        --forth-color: #21094E;
+}
+
+section{
+    padding: 50px 10%;
+}
+
+*::selection{
+    color: #FFFFFF;
+    background: var(--main-color);
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+    color: var(--third-color);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo img{
+    width: 40px;
+    padding: 5px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--third-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+    color: var(--third-color);
+}
+
+.home{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient( rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(Netflix-featured.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 5%;
+  }
+  
+  .container .title {
+    padding: 70px 0;
+    color: var(--third-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container .title .content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 75px 0;
+    text-align: center;
+  }
+  
+  .container .title .content h1 {
+    font-size: 3.1rem;
+    text-align: center;
+    color: var(--main-color);
+  }
+  
+  .container .title .content h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .container .title .content span{
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+/* About */
+
+.about{
+    background: var(--second-color);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+    text-align: center;
+}
+
+.about .row .content .title{
+    font-size:2.5rem;
+    color: var(--main-color);
+}
+
+.about .row .content p{
+    font-size:1.1rem;
+    color:var(--third-color);
+    line-height: 1.8;
+    padding: 0.7rem 0;
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding-top: 2rem;
+}
+
+.about .row .content .icons-container .icons{
+    flex:1 1 15rem;
+    border-radius: .5rem;
+    background: #e0e0e2;
+    padding:1.5rem;
+    text-align: center;
+}
+
+.about .row .content .icons-container .icons:hover{
+    background: #ebdbff;
+}
+  
+
+.about .row .content .icons-container .icons i{
+    font-size: 45px;
+    margin: 0.5rem;
+}
+
+.about .row .content .icons-container .icons i.bx{
+        padding: 5px;
+        color: var(--main-color);
+        border-radius: 50%;
+}
+    
+.about .row .content .icons-container .icons h3{
+    color:var(--second-color);
+    font-size: 1.4rem;
+    padding-top: 1rem;
+}
+
+.about .row .content .icons-container .icons p{
+    color:var(--second-color);
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+
+/* Pricing */
+.subs{
+    background-color: var(--second-color);
+    text-align: center;
+}
+
+.subs h2{
+    color: var(--main-color);
+    font-size: 2.6rem;
+    font-weight: bolder  ;
+}
+
+.subs p{
+    color: var(--third-color);
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+  .card {
+    width: 280px;
+    margin: 20px;
+    border: #FFFFFF;
+    background: #e0e0e2;
+    box-shadow: 0px 0px 2px var(--third-color);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .card-header {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ACB1D6;;
+  }
+  
+  .card-header h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+ 
+  .card-header .price {
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .card-header .price span{
+    font-size: 35px;
+    opacity: 0.5;
+  }
+  .card-header p{
+    font-size: 15px;
+    color: var(--second-color);
+    font-weight: normal;
+  }
+  
+  .card-body {
+    padding: 5px;
+    text-align: justify;
+  }
+  
+  .card-body ul {
+    list-style: none;
+    padding: 20px;
+    list-style: disc;
+  }
+  
+  .card-body li {
+    margin-bottom: 10px;
+    color: var(--second-color);
+  }
+  
+  .btn-pln {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--mainn-color);
+    color: #FFFFFF;
+  }
+
+  .btn-pln:hover{
+    opacity: 0.7;
+    background-color: var(--forth-color) ;
+  }
+
+  /* infoapp */
+.infoapp{
+    background-color: var(--second-color);
+}
+
+.infoapp .row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .infoapp .row2 .image2{
+    flex:1 1 30rem;
+  }
+  
+  .infoapp .row2 .image2 img{
+    width:100%;
+  }
+  
+  .infoapp .row2 .content2{
+    flex:1 1 30rem;
+  }
+  
+  .infoapp .row2 .content2 h3{
+    color: var(--main-color);
+    font-size: 2.9rem;
+  }
+
+  .infoapp .row2 .content2 p{
+    color: var(--third-color);
+    font-size: 1.2rem;
+    padding:1rem 0;
+    text-align: justify;
+  }
+  
+  .infoapp .row2 .content2 .buttons2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+  }
+  
+  .infoapp .row2 .content2 .buttons2 a:hover{
+    opacity: .7;
+  }
+  
+  .infoapp .row2 .content2 .buttons2 a:last-child{
+    margin-left: 2rem;
+  }
+
+
+/* About */
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--second-color);
+}
+
+.social a{
+  font-size: 27px;
+  margin: 0.5rem;
+}
+
+.social a .bx{
+  padding: 5px;
+  color: #FFFFFF;
+  background: var(--second-color);
+  border-radius: 50%;
+}
+
+.social a .bx:hover{
+  background: #A300A7;
+}
+
+.links{
+  margin: 1rem 0 1rem;
+}
+
+.links a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.links a:hover{
+  color: #A300A7;
+}
+
+.contact p{
+  text-align: center;
+  color: #FFFFFF;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 1025px){
+    header{
+        padding: 18px 7%;
+    }
+    section{
+        padding: 50px 7%;
+    }
+}
+
+/* Tablet atau layar menengah */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: 0.2s;
+        text-align: left;
+    }
+    
+    header .active{
+        top: 100%;
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--third-color);
+    }
+    .navbar a:hover{
+        color: var(--main-color);
+    }
+    .container .title .content h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        color: var(--main-color);
+      }
+      
+      .container .title .content h2 {
+        font-size: 1.1rem;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+    
+      .container .title .content span{
+        font-size: 1.4rem;
+        text-align: center;
+      }
+      .about .row .content .title{
+        font-size:2.2rem;
+        color: var(--main-color);
+    }
+    
+    .about .row .content p{
+        font-size:1.1rem;
+        color:var(--third-color);
+        line-height: 1.8;
+        padding: 0.7rem 0;
+    }
+
+    .about .row .content .icons-container .icons i{
+        font-size: 40px;
+        margin: 0.5rem;
+    }
+        
+    .about .row .content .icons-container .icons h3{
+        color:var(--second-color);
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+    
+    .about .row .content .icons-container .icons p{
+        color:var(--second-color);
+        font-size: 1rem;
+        padding-top: 1rem;
+    }   
+    .infoapp .row2 .content2 h3{
+        color: var(--main-color);
+        font-size: 2.3rem;
+      }
+    
+      .infoapp .row2 .content2 p{
+        color: var(--third-color);
+        font-size: 1.1rem;
+        padding:1rem 0;
+        text-align: justify;
+      }
+}
+
+/* Phone */
+
+@media only screen and (max-width: 480px){
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: 0.2s;
+        text-align: left;
+    }
+    header .active{
+        top: 100%;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--third-color);
+    }
+    .navbar a:hover{
+        color: var(--main-color);
+    }
+    .container .title .content h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        color: var(--main-color);
+      }
+      
+      .container .title .content h2 {
+        font-size: 1.1rem;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+    
+      .container .title .content span{
+        font-size: 1.4rem;
+        text-align: center;
+      }
+      .about .row .content .title{
+        font-size:2.2rem;
+        color: var(--main-color);
+    }
+    
+    .about .row .content p{
+        font-size:1.1rem;
+        color:var(--third-color);
+        line-height: 1.8;
+        padding: 0.7rem 0;
+    }
+
+    .about .row .content .icons-container .icons i{
+        font-size: 40px;
+        margin: 0.5rem;
+    }
+        
+    .about .row .content .icons-container .icons h3{
+        color:var(--second-color);
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+    
+    .about .row .content .icons-container .icons p{
+        color:var(--second-color);
+        font-size: 1rem;
+        padding-top: 1rem;
+    }   
+    .infoapp .row2 .content2 h3{
+        color: var(--main-color);
+        font-size: 2.2rem;
+      }
+    
+      .infoapp .row2 .content2 p{
+        color: var(--third-color);
+        font-size: 1rem;
+        padding:1rem 0;
+        text-align: justify;
+      }
+}
